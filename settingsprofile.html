@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f3ef;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background: #de8c8c;
+      padding: 15px;
+      text-align: center;
+    }
+
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #912b2b;
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #912b2b;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  background: #de8c8c;
+  padding: 5px;
+  text-align: center;
+}
+
+    label {
+      font-weight: 500;
+      color: #444;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border: 1.5px solid #912b2b;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 4%;
+    }
+
+    .socials input {
+      width: 48%;
+    }
+
+    .qr {
+      text-align: center;
+      margin-top: 30px;
+
+    }
+
+    .qr img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .submit-btn {
+      display: block;
+      background-color: #be6d6d;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .submit-btn:hover {
+      background-color: #bf6565;
+    }
+
+    @media (max-width: 600px) {
+      .socials {
+        flex-direction: column;
+      }
+
+      .socials input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="account.html">My Account</a>
+  </nav>
+  </header>
+
+  <div class="container">
+    <img src="img/pfp.png" alt="Profile" class="profile-pic">
+    <h2>Edit Your Account</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Name Surname">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your Email">
+
+    <label for="bio">Bio / Experience in Georgia</label>
+    <textarea id="bio" rows="5" placeholder="Write about your experience in Georgia..."></textarea>
+
+    <label for="favourite">Favourite Things (food, cities, culture...)</label>
+    <input type="text" id="favourite" placeholder="Khinkali, Batumi sunsets, folk music...">
+
+    <label for="visited">Has Visited</label>
+    <textarea id="visited" rows="3" placeholder="Tbilisi, Batumi, Kazbegi, etc."></textarea>
+
+    <label>Social Media</label>
+    <div class="socials">
+      <input type="text" placeholder="Instagram">
+      <input type="text" placeholder="Facebook">
+    </div>
+
+    <div class="qr">
+      <p>QR code that lets others visit your profile (optional)</p>
+      <img src="img/qr.png" alt="QR Code">
+    </div>
+
+    <button class="submit-btn">Submit</button>
+  </div>
+</body>
+</html>

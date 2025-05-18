@@ -1,0 +1,28 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px ;
+    background-color: #d54b4b;
+    color: white;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+  }
+  
+  .contact-info, .contact-form {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(239, 81, 81, 0.585);
+    padding: 20px;
+    width: 500px;
+  }
+  
+  

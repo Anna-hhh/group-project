@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffe4e1; 
+  margin: 0; 
+  padding: 0; 
+  cursor: default; 
+  user-select: text; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-section {
+  background-image: url('../img/blur.png');
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff0f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  left: 0; 
+  width: 100%; 
+  margin: 0; 
+  padding: 10px 16px;
+  z-index: 1000; 
+  box-sizing: border-box; 
+}
+
+.btn {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #ff6b81;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}

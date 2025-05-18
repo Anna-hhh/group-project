@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e03f1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+ 
+ body {
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.region {
+    margin: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(227, 50, 50, 0.521);
+    width: 600px;
+}
+body.kakheti {
+    background-color: #eaf7ea;
+    color: #19532d;
+}
+body.kakheti header {
+    background-color: #388e3c;
+}
+body.svaneti {
+    background-color: #e0f2f7;
+    color: #1565c0;
+}
+body.svaneti header {
+    background-color: #1976d2;
+}
+
+body.kutaisi {
+    background-color: #fff8e1;
+    color: #795548;
+}
+body.kutaisi header{
+    background-color: #a1887f;
+}
+
+
+body.batumi {
+    background-color: #e0f7fa;
+    color: #006064;
+}
+body.batumi header {
+    background-color: #ff7b7bab;
+}
+
+.main-image {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+}
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}  
+.intro-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+}
+.intro {
+    padding: 20px;
+    background-color: #fff0e6;
+}
+
+.places {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.region-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.region {
+  height: 200px;
+  width: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 0 0 10px rgba(227, 50, 50, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.region-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/botanikuri.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.region:hover .region-image {
+  transform: scale(1.05);
+}
+
+.region p {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+

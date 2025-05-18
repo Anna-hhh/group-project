@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
+  <title>Register</title>
+</head>
+<body>
+  <header class="nav">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pfp.html">My Account</a>
+  </nav>
+  </header>
+<body style="background: #ffe6e1;">
+  <div class="container">
+    <h1 class="title">Log In</h1>
+<form class="login-form" action="settingsprofile.html" method="get">
+  <label for="login-email">Email</label>
+  <input id="login-email" type="email" name="email" required>
+
+  <label for="login-password">Password</label>
+  <input id="login-password" type="password" name="password" required>
+
+  <input class="submit-button" type="submit" value="Log In">
+</form>
+  </div>
+
+  <div class="container">
+    <h1 class="title">Sign Up</h1>
+<form class="signup-form" action="settingsprofile.html" method="get">
+      <label for="fullname">Full Name</label>
+      <input id="fullname" type="text" name="fullname" required>
+
+      <label for="signup-email">Email</label>
+      <input id="signup-email" type="email" name="email" required>
+
+      <label for="age">Age</label>
+      <input id="age" type="number" name="age" required>
+
+      <label for="signup-password">Password</label>
+      <input id="signup-password" type="password" name="password" required>
+
+      <label>Gender</label><br>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="male">Male</label>
+
+      <br><br>
+
+      <input type="checkbox" id="terms">
+      <label for="terms">Agree to terms and conditions</label>
+
+      <br><br>
+
+      <input class="submit" type="submit" value="Sign Up">
+    </form>
+  </div>
+</body>
+</html>
